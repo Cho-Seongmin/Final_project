@@ -40,6 +40,20 @@ class AlcoholDetector:                  # 클래스(설계도) 선언
         cap.release()
         cv2.destroyAllWindows()
 
-if __name__ == "__main__":
-    detector = AlcoholDetector()
-    detector.run_webcam()
+    def get_detected_counts(self, frame) -> dict:
+        """현재 프레임에서 감지된 주류 종류별 개수를 딕셔너리로 반환"""
+        results = self.model(frame, conf=0.7)
+        detected_counts = {}
+        
+        for r in results:
+            boxes = r.boxes
+            for box in boxes:
+                # 클래스 인덱스 가져오기 (예: 0, 1 등)
+                cls_id = int(box.cls[0])
+                # 모델에 정의된 클래스 이름 가져오기 (예: 'soju-bottle', 'beer-can' 등)
+                cls_name = r.names[cls_id]
+                
+                # 딕셔너리에 개수 누적
+                detected_counts[cls_name] = detected_counts.get(cls_name, 0) + 1
+                
+        return detected_counts
