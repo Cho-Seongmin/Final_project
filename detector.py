@@ -24,7 +24,7 @@ class AlcoholDetector:                  # 클래스(설계도) 선언
                 break
 
             # YOLO 모델로 현재 프레임 추론 (감지)
-            results = self.model(frame, conf=0.7)       # conf는 신뢰도 임계값 (0.7 이상만 표시)
+            results = self.model(frame, conf=0.6)       # conf는 신뢰도 임계값 (0.7 이상만 표시)
 
             # 감지된 결과가 시각적으로 그려진 이미지 프레임 받아오기
             annotated_frame = results[0].plot()
@@ -42,7 +42,7 @@ class AlcoholDetector:                  # 클래스(설계도) 선언
 
     def get_detected_counts(self, frame) -> dict:
         """현재 프레임에서 감지된 주류 종류별 개수를 딕셔너리로 반환"""
-        results = self.model(frame, conf=0.7)
+        results = self.model(frame, conf=0.6)
         detected_counts = {}
         
         for r in results:

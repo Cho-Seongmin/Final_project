@@ -69,3 +69,26 @@ class AlcoholCalculator:
             return f"적정함: 딱 알맞은 주량 범위 내에 있습니다! (현재 {current_grams:.1f}g)"
         else:
             return f"초과함: 목표 주량보다 알코올이 초과되었습니다! (현재 {current_grams:.1f}g / 목표 {self.total_target_grams:.1f}g)"
+
+    def get_medical_bac_status(self, detected_counts: dict) -> tuple:
+        """
+        제시된 5단계 의학적·생리적 단계 구분에 따른 예상 혈중알코올농도 상태 및 색상(BGR) 반환
+        - 0.03% 미만: 가벼운 취기 (초록색)
+        - 0.03% ~ 0.10% 미만: 취기 및 감각 저하 (노란색)
+        - 0.10% ~ 0.20% 미만: 만취 및 운동 조정 능력 상실 (주황색)
+        - 0.20% ~ 0.30% 미만: 심각한 중독 (진한 주황색)
+        - 0.30% 이상: 위험 수준 (빨간색)
+        """
+        min_bac, max_bac = self.calculate_bac_range(detected_counts)
+        avg_bac = (min_bac + max_bac) / 2.0
+
+        if avg_bac < 0.03:
+            return (0, 255, 0)             # 초록색
+        elif 0.03 <= avg_bac < 0.10:
+            return (0, 255, 255)           # 노란색
+        elif 0.10 <= avg_bac < 0.20:
+            return (0, 165, 255)           # 주황색
+        elif 0.20 <= avg_bac < 0.30:
+            return (0, 69, 255)            # 진한 주황색
+        else:
+            return (0, 0, 255)             # 빨간색
