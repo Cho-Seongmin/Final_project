@@ -1,8 +1,9 @@
-train: train/images
-val: valid/images
-test: test/images
-nc: 3
 names:
   0: beer-bottle
   1: beer-can
   2: soju-bottle
+nc: 3
+path: /Users/kim_taeyu/OSS_Final_Team_Project/주류탐지_데이터셋
+test: test/images
+train: train/images
+val: valid/images
