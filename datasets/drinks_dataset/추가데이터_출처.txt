@@ -1,0 +1,85 @@
+추가 데이터 74장 출처 및 라이선스
+processedd: https://universe.roboflow.com/yugraduate/processedd/dataset/1
+alcohol: https://universe.roboflow.com/mainpj/alcohol-pvbrd/dataset/1
+제공 자료 라이선스 표기: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+변경: 목표 3개 클래스로 라벨 변환, 비주류 사진의 작업 라벨을 비움, 테라 캔·소주병 사진의 누락 박스 보완. 원본 이미지는 유지.
+원본 제공 README:
+
+source_metadata/processedd/README.dataset.txt
+# processedd > 2023-05-05 11:56pm
+https://universe.roboflow.com/yugraduate/processedd
+
+Provided by a Roboflow user
+License: CC BY 4.0
+
+
+
+source_metadata/processedd/README.roboflow.txt
+
+processedd - v1 2023-05-05 11:56pm
+==============================
+
+This dataset was exported via roboflow.com on November 18, 2026 at 6:31 AM GMT
+
+Roboflow is an end-to-end computer vision platform that helps you
+* collaborate with your team on computer vision projects
+* collect & organize images
+* understand and search unstructured image data
+* annotate, and create datasets
+* export, train, and deploy computer vision models
+* use active learning to improve your dataset over time
+
+For state of the art Computer Vision training notebooks you can use with this dataset,
+visit https://github.com/roboflow/notebooks
+
+To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
+
+The dataset includes 456 images.
+Processedd are annotated in YOLOv8 format.
+
+The following pre-processing was applied to each image:
+* Auto-orientation of pixel data (with EXIF-orientation stripping)
+* Resize to 640x640 (Stretch)
+
+No image augmentation techniques were applied.
+
+
+
+
+source_metadata/alcohol/README.dataset.txt
+# alcohol > 2023-01-06 11:32pm
+https://universe.roboflow.com/mainpj/alcohol-pvbrd
+
+Provided by a Roboflow user
+License: CC BY 4.0
+
+
+
+source_metadata/alcohol/README.roboflow.txt
+
+alcohol - v1 2023-01-06 11:32pm
+==============================
+
+This dataset was exported via roboflow.com on March 1, 2023 at 6:00 PM GMT
+
+Roboflow is an end-to-end computer vision platform that helps you
+* collaborate with your team on computer vision projects
+* collect & organize images
+* understand and search unstructured image data
+* annotate, and create datasets
+* export, train, and deploy computer vision models
+* use active learning to improve your dataset over time
+
+For state of the art Computer Vision training notebooks you can use with this dataset,
+visit https://github.com/roboflow/notebooks
+
+To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
+
+The dataset includes 5453 images.
+OBJECT-DETECTION are annotated in YOLOv8 format.
+
+The following pre-processing was applied to each image:
+* Auto-orientation of pixel data (with EXIF-orientation stripping)
+* Resize to 640x640 (Stretch)
+
+No image augmentation techniques were applied.
