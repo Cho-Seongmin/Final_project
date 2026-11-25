@@ -1,8 +1,0 @@
-train: train/images
-val: valid/images
-test: test/images
-nc: 3
-names:
-  0: beer-bottle
-  1: beer-can
-  2: soju-bottle

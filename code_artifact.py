@@ -23,6 +23,7 @@ MAX_PEOPLE = 8 # UI에서 개별 주량을 입력받을 최대 인원수
 def find_best_model() -> str:
     """프로젝트 폴더 내에서 학습된 best.pt 파일의 위치를 자동으로 탐색합니다."""
     candidate_paths = [
+        "best_26s.pt",
         "best.pt",
         "weights/best.pt",
         "models/best.pt",
