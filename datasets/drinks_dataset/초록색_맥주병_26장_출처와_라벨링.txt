@@ -1,0 +1,191 @@
+초록색 유리 맥주병 학습 사진 26장
+
+기준 데이터셋 · 주류탐지 통합본 1,301장
+학습용에 26장과 class 0 YOLO 라벨 26개를 추가했습니다.
+한 장에 여러 병이 있는 사진도 포함하여 맥주병 박스는 36개입니다.
+최종 합계 1,327장 · 학습 1,104장 · 검증 112장 · 테스트 111장
+기존 데이터셋 파일은 내용 그대로 보존했습니다. 기존 테스트용 웹 사진 17장은 이 ZIP에 학습용으로 편입하지 않았습니다.
+라벨은 기존 모델의 제안 박스를 사진과 대조해 확인하고 일부 경계를 조정했습니다.
+Wikimedia Commons의 사진 파일 또는 제공 해상도를 사용했고, 파일명을 정리했습니다.
+
+beer_bottle_01_green_Beck_s_BG_3_beers.jpg
+  보이는 맥주병 박스 3개
+  원본 제목  Beck's BG 3 beers.jpg
+  저작자  LeeKeoma
+  원본  https://commons.wikimedia.org/wiki/File:Beck%27s_BG_3_beers.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_02_green_Tsingtao_Yau_Ma_Tei_Hongkong.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Tsingtao, Yau Ma Tei, Hongkong.jpg
+  저작자  Ondřej Žváček
+  원본  https://commons.wikimedia.org/wiki/File:Tsingtao,_Yau_Ma_Tei,_Hongkong.jpg
+  라이선스  CC BY 2.5  https://creativecommons.org/licenses/by/2.5
+
+beer_bottle_03_green_Coves_Campanet_2022_59.jpg
+  보이는 맥주병 박스 2개
+  원본 제목  Coves Campanet 2022 59.jpg
+  저작자  MiguelAlanCS
+  원본  https://commons.wikimedia.org/wiki/File:Coves_Campanet_2022_59.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_04_green_Alfa_beer_28650230306.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Alfa beer (28650230306).jpg
+  저작자  Erik Cleves Kristensen
+  원본  https://commons.wikimedia.org/wiki/File:Alfa_beer_(28650230306).jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_05_green_Green_bottle_of_Heineken.jpg
+  보이는 맥주병 박스 3개
+  원본 제목  Green bottle of Heineken.JPG
+  저작자  Nicholas Gemini
+  원본  https://commons.wikimedia.org/wiki/File:Green_bottle_of_Heineken.JPG
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_06_green_Tsingtao_beer_a_2015-04-07_16-56-17.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Tsingtao beer a 2015-04-07 16-56-17.JPG
+  저작자  Radosław Drożdżewski (Zwiadowca21)
+  원본  https://commons.wikimedia.org/wiki/File:Tsingtao_beer_a_2015-04-07_16-56-17.JPG
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_07_green_Signs_of_the_times_-_geograph_org_uk_-_1154480.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Signs of the times. - geograph.org.uk - 1154480.jpg
+  저작자  Chris Allen
+  원본  https://commons.wikimedia.org/wiki/File:Signs_of_the_times._-_geograph.org.uk_-_1154480.jpg
+  라이선스  CC BY-SA 2.0  https://creativecommons.org/licenses/by-sa/2.0
+
+beer_bottle_08_green_Beck_s_Brauerei_Beck_Co.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Beck's (Brauerei Beck & Co.).jpg
+  저작자  Pansebert
+  원본  https://commons.wikimedia.org/wiki/File:Beck%27s_(Brauerei_Beck_%26_Co.).jpg
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_bottle_09_green_20240429_Sausage_with_mustard_in_the_Silesian_Par.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  20240429 Sausage with mustard in the Silesian Park.jpg
+  저작자  Abraham
+  원본  https://commons.wikimedia.org/wiki/File:20240429_Sausage_with_mustard_in_the_Silesian_Park.jpg
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_bottle_10_green_Grolsch_premium_lager_bottle_unopened.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Grolsch premium lager bottle unopened.jpg
+  저작자  Ccyyrree
+  원본  https://commons.wikimedia.org/wiki/File:Grolsch_premium_lager_bottle_unopened.jpg
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_bottle_11_green_Beck_s_bottles.jpg
+  보이는 맥주병 박스 3개
+  원본 제목  Beck’s bottles.jpg
+  저작자  Nicholas Gemini
+  원본  https://commons.wikimedia.org/wiki/File:Beck%E2%80%99s_bottles.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_12_green_2026_1_10_202601101339_IMG_2194.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  青島ビール 状元樓 横浜中華街本店 2026年1月10日の横浜 202601101339 IMG 2194.jpg
+  저작자  ウィ貴公子
+  원본  https://commons.wikimedia.org/wiki/File:%E9%9D%92%E5%B3%B6%E3%83%93%E3%83%BC%E3%83%AB_%E7%8A%B6%E5%85%83%E6%A8%93_%E6%A8%AA%E6%B5%9C%E4%B8%AD%E8%8F%AF%E8%A1%97%E6%9C%AC%E5%BA%97_2026%E5%B9%B41%E6%9C%8810%E6%97%A5%E3%81%AE%E6%A8%AA%E6%B5%9C_202601101339_IMG_2194.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_13_green_Grolsh.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Пляшка пива Grolsh.JPG
+  저작자  sachkot
+  원본  https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BB%D1%8F%D1%88%D0%BA%D0%B0_%D0%BF%D0%B8%D0%B2%D0%B0_Grolsh.JPG
+  라이선스  Public domain  원본 페이지 참조
+
+beer_bottle_14_green_Alfa_beer.jpg
+  보이는 맥주병 박스 2개
+  원본 제목  Alfa beer.jpg
+  저작자  Shadster (autor) Original uploader was Shadster at cs.wikipedia
+  원본  https://commons.wikimedia.org/wiki/File:Alfa_beer.jpg
+  라이선스  CC BY-SA 3.0  http://creativecommons.org/licenses/by-sa/3.0/
+
+beer_bottle_15_green_Ahh_beer.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Ahh beer.jpg
+  저작자  GR8DAN
+  원본  https://commons.wikimedia.org/wiki/File:Ahh_beer.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_16_green_Beer_at_Miss_Yan_V_stertorp_Stockholm_-_panoramio.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Beer at Miss Yan, Västertorp (Stockholm) - panoramio.jpg
+  저작자  Tommie Hansen
+  원본  https://commons.wikimedia.org/wiki/File:Beer_at_Miss_Yan,_V%C3%A4stertorp_(Stockholm)_-_panoramio.jpg
+  라이선스  CC BY 3.0  https://creativecommons.org/licenses/by/3.0
+
+beer_bottle_17_green_Alfa_Beer_PL.jpg
+  보이는 맥주병 박스 2개
+  원본 제목  Alfa Beer PL..JPG
+  저작자  Beemwej
+  원본  https://commons.wikimedia.org/wiki/File:Alfa_Beer_PL..JPG
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_18_green_1664_beer1.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  1664.beer1.JPG
+  저작자  LeeKeoma
+  원본  https://commons.wikimedia.org/wiki/File:1664.beer1.JPG
+  라이선스  Public domain  원본 페이지 참조
+
+beer_bottle_19_green_A_Chilean_beer_48338485822.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  A Chilean beer (48338485822).jpg
+  저작자  S. Rae from Scotland, UK
+  원본  https://commons.wikimedia.org/wiki/File:A_Chilean_beer_(48338485822).jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_20_green_Heineken_Bottle.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Heineken Bottle.jpg
+  저작자  Uttamstef12
+  원본  https://commons.wikimedia.org/wiki/File:Heineken_Bottle.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_21_green_Cerveza_China_32366210444.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Cerveza China (32366210444).jpg
+  저작자  Jesús Alenda
+  원본  https://commons.wikimedia.org/wiki/File:Cerveza_China_(32366210444).jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_22_green_Last_Beer_before_China_2859032397.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Last Beer before China (2859032397).jpg
+  저작자  cogdogblog
+  원본  https://commons.wikimedia.org/wiki/File:Last_Beer_before_China_(2859032397).jpg
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_bottle_23_green_Bottle_Peroni_Nastro_Azzurro.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Bottle Peroni Nastro Azzurro.jpg
+  저작자  Kimjon12
+  원본  https://commons.wikimedia.org/wiki/File:Bottle_Peroni_Nastro_Azzurro.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_24_green_Nastro_Azzurro.jpg
+  보이는 맥주병 박스 2개
+  원본 제목  Nastro Azzurro.JPG
+  저작자  The original uploader was Stanthejeep at English Wikipedia .
+  원본  https://commons.wikimedia.org/wiki/File:Nastro_Azzurro.JPG
+  라이선스  CC BY-SA 2.5  https://creativecommons.org/licenses/by-sa/2.5
+
+beer_bottle_25_green_Peroni_Nastro_Azzurro_3.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Peroni Nastro Azzurro 3.jpg
+  저작자  Uttamstef12
+  원본  https://commons.wikimedia.org/wiki/File:Peroni_Nastro_Azzurro_3.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_26_green_Tuborg_Green.jpg
+  보이는 맥주병 박스 1개
+  원본 제목  Tuborg Green.jpg
+  저작자  McKaby
+  원본  https://commons.wikimedia.org/wiki/File:Tuborg_Green.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
