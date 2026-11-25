@@ -1,4 +1,5 @@
 import os
+import tempfile
 import yaml
 import pandas as pd
 from ultralytics import YOLO
@@ -11,11 +12,10 @@ CANDIDATE_MODELS = {
     "태유_YOLOv26s": "taeyu_best_26s.pt",
     "태유_YOLOv8s": "taeyu_best_8s.pt",
     "성민_YOLOv8n": "seongmin_best.pt",
-    #"재하_YOLOv8m": "jaeha_best.pt",
+    "YOLOv8s": "yolov8s.pt",
 }
 
-ORIGINAL_YAML_PATH = "주류탐지_데이터셋/data.yaml"
-TEMP_YAML_PATH = "_temp_eval_data.yaml"
+ORIGINAL_YAML_PATH = "datasets/drinks_dataset/data.yaml"
 CONF_THRESHOLD = 0.62  # 웹 앱(code_artifact.py)과 동일한 신뢰도 임계값 적용
 
 
@@ -45,11 +45,25 @@ def prepare_local_yaml(original_yaml: str, temp_yaml: str) -> str:
 def evaluate_models():
     """등록된 모든 후보 모델을 동일한 test 데이터셋으로 평가하고 순위표를 출력합니다."""
     eval_results = []
+    project_dir = os.path.dirname(os.path.abspath(__file__))
+    temp_yaml_path = None
 
     try:
-        yaml_to_use = prepare_local_yaml(ORIGINAL_YAML_PATH, TEMP_YAML_PATH)
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            suffix=".yaml",
+            prefix="_temp_eval_data_",
+            dir=project_dir,
+            delete=False,
+        ) as temp_file:
+            temp_yaml_path = temp_file.name
+
+        original_yaml_path = os.path.join(project_dir, ORIGINAL_YAML_PATH)
+        yaml_to_use = prepare_local_yaml(original_yaml_path, temp_yaml_path)
 
         for model_name, weight_path in CANDIDATE_MODELS.items():
+            weight_path = os.path.join(project_dir, weight_path)
             # 폴더에 해당 모델 파일이 없으면 안내 후 다음 모델로 넘어감
             if not os.path.exists(weight_path):
                 print(f"⚠️ 건너뜀: '{weight_path}' 파일이 폴더에 없습니다.")
@@ -105,7 +119,9 @@ def evaluate_models():
 
             # 주피터 노트북(.ipynb) 환경인 경우 깔끔한 HTML 표로도 함께 렌더링
             try:
-                from IPython.display import display
+                from importlib import import_module
+
+                display = import_module("IPython.display").display
                 display(df)
             except ImportError:
                 pass
@@ -117,8 +133,9 @@ def evaluate_models():
 
     finally:
         # 평가 종료 후 생성된 임시 yaml 파일 자동 정리
-        if os.path.exists(TEMP_YAML_PATH):
-            os.remove(TEMP_YAML_PATH)
+        if temp_yaml_path and os.path.exists(temp_yaml_path):
+            os.remove(temp_yaml_path)
+
 
 
 if __name__ == "__main__":
