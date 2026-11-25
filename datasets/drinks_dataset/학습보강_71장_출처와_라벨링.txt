@@ -1,0 +1,523 @@
+주류 탐지 학습 보강 사진 71장
+
+맥주캔 28장 · 맥주병 28장 · 병따개 오탐 방지 15장
+
+기존 클래스
+0 beer-bottle · 맥주병
+1 beer-can · 맥주캔
+2 soju-bottle · 소주병
+
+맥주캔과 맥주병 사진은 용기 외곽에 맞춘 YOLO 박스 라벨을 포함합니다. 병따개 사진은 빈 라벨입니다.
+유리잔, 병뚜껑, 병따개와 비주류에는 박스를 그리지 않습니다. 프레임 밖으로 잘린 용기는 보이는 부분까지만 그립니다.
+병따개 사진 15장에는 대상 주류가 없습니다. train/labels 폴더에 이미지 이름과 같은 빈 YOLO .txt를 넣었습니다.
+앞서 정리한 테스트 사진 17장은 검증용으로 계속 따로 보관하세요.
+
+출처 표기
+Original title, author, file page and license are recorded for each photo.
+사진은 Wikimedia Commons 원본 또는 Commons에서 제공한 해상도 버전이며, 파일명만 정리했습니다.
+
+
+맥주캔 · class 1 · 28장
+
+beer_can_01_Bi_re_tunisienne_Celtia_avril_2017.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Bière tunisienne, Celtia, avril 2017.jpg
+  저작자  Habib M'henni
+  원본  https://commons.wikimedia.org/wiki/File:Bi%C3%A8re_tunisienne,_Celtia,_avril_2017.jpg
+  라이선스  Public domain  원본 페이지 참조
+
+beer_can_02_CoolHead_La_Dolce_Vita.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  CoolHead La Dolce Vita.jpg
+  저작자  JIP
+  원본  https://commons.wikimedia.org/wiki/File:CoolHead_La_Dolce_Vita.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_can_03_Can_of_Cristal_lager_2025.jpg
+  보이는 대상 1개 · 960 × 1304 px
+  원본 제목  Can of Cristal lager, 2025.jpg
+  저작자  DimiTalen
+  원본  https://commons.wikimedia.org/wiki/File:Can_of_Cristal_lager,_2025.jpg
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_can_04_Bintang_can_with_beer_glass_Dili_2023_01.jpg
+  보이는 대상 1개 · 960 × 1197 px
+  원본 제목  Bintang can with beer glass, Dili, 2023 (01).jpg
+  저작자  Bahnfrend
+  원본  https://commons.wikimedia.org/wiki/File:Bintang_can_with_beer_glass,_Dili,_2023_(01).jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_can_05_Echigo_beer_can_-_Japan_-_jan_2016.jpg
+  보이는 대상 1개 · 960 × 961 px
+  원본 제목  Echigo beer can - Japan - jan 2016.jpg
+  저작자  nesnad
+  원본  https://commons.wikimedia.org/wiki/File:Echigo_beer_can_-_Japan_-_jan_2016.jpg
+  라이선스  CC BY 3.0  https://creativecommons.org/licenses/by/3.0
+
+beer_can_06_Cerveza_Andes_blanca.jpg
+  보이는 대상 1개 · 960 × 908 px
+  원본 제목  Cerveza Andes blanca.jpg
+  저작자  Just a Man
+  원본  https://commons.wikimedia.org/wiki/File:Cerveza_Andes_blanca.jpg
+  라이선스  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+
+beer_can_07_Maes_pils_can.jpg
+  보이는 대상 1개 · 960 × 1396 px
+  원본 제목  Maes pils can.jpg
+  저작자  Panek
+  원본  https://commons.wikimedia.org/wiki/File:Maes_pils_can.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_can_08_Cerveza_Santa_Fe_-_2.jpg
+  보이는 대상 1개 · 960 × 1169 px
+  원본 제목  Cerveza Santa Fe - (2).jpg
+  저작자  Just a Man
+  원본  https://commons.wikimedia.org/wiki/File:Cerveza_Santa_Fe_-_(2).jpg
+  라이선스  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+
+beer_can_09_Local_beer_-_Pirikawakka_PILSNER.jpg
+  보이는 대상 1개 · 960 × 640 px
+  원본 제목  Local beer - Pirikawakka PILSNER.jpg
+  저작자  MIKI Yoshihito
+  원본  https://commons.wikimedia.org/wiki/File:Local_beer_-_Pirikawakka_PILSNER.jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_can_10_Martens_Gold_1.jpg
+  보이는 대상 1개 · 960 × 1475 px
+  원본 제목  Martens Gold 1.jpg
+  저작자  kallerna
+  원본  https://commons.wikimedia.org/wiki/File:Martens_Gold_1.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_can_11_OB-Lager-DSCF0446.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  OB-Lager-DSCF0446.JPG
+  저작자  Tomchiukc ( talk )
+  원본  https://commons.wikimedia.org/wiki/File:OB-Lager-DSCF0446.JPG
+  라이선스  CC BY 3.0  https://creativecommons.org/licenses/by/3.0
+
+beer_can_12_Willien_willien.jpg
+  보이는 대상 1개 · 960 × 1200 px
+  원본 제목  Willien willien!!.JPG
+  저작자  Cash2013
+  원본  https://commons.wikimedia.org/wiki/File:Willien_willien!!.JPG
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_can_13_Garage_Lager_beer_with_orange_peel.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Garage Lager beer with orange peel.jpg
+  저작자  JIP
+  원본  https://commons.wikimedia.org/wiki/File:Garage_Lager_beer_with_orange_peel.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_can_14_Al_Beya_bi_re_tunisienne_mai_2022.jpg
+  보이는 대상 1개 · 960 × 1282 px
+  원본 제목  Al Beya, bière tunisienne, mai 2022.jpg
+  저작자  Habib M'henni
+  원본  https://commons.wikimedia.org/wiki/File:Al_Beya,_bi%C3%A8re_tunisienne,_mai_2022.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_can_15_Abbot_Ale.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Abbot Ale.JPG
+  저작자  Oxiq
+  원본  https://commons.wikimedia.org/wiki/File:Abbot_Ale.JPG
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_can_16_Don_Wheato.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Don Wheato.jpg
+  저작자  JIP
+  원본  https://commons.wikimedia.org/wiki/File:Don_Wheato.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_can_17_Bishops_Finger.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Bishops Finger.JPG
+  저작자  Oxiq
+  원본  https://commons.wikimedia.org/wiki/File:Bishops_Finger.JPG
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_can_18_Cerveza_Andes_Origen_Negra_1.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Cerveza Andes Origen Negra (1).jpg
+  저작자  Just a Man
+  원본  https://commons.wikimedia.org/wiki/File:Cerveza_Andes_Origen_Negra_(1).jpg
+  라이선스  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+
+beer_can_19_Bier_blue_marlin_2019-09-30.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Bier blue marlin 2019-09-30.jpg
+  저작자  Z thomas
+  원본  https://commons.wikimedia.org/wiki/File:Bier_blue_marlin_2019-09-30.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_can_20_Cisk_Lager_and_Beach.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Cisk Lager and Beach.JPG
+  저작자  Wusel007
+  원본  https://commons.wikimedia.org/wiki/File:Cisk_Lager_and_Beach.JPG
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_can_21_Dansk_Fad_l.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Dansk Fadøl.JPG
+  저작자  Oxiq
+  원본  https://commons.wikimedia.org/wiki/File:Dansk_Fad%C3%B8l.JPG
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_can_22_Imperial_Cream_Stout.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Imperial Cream Stout.jpg
+  저작자  Just a Man
+  원본  https://commons.wikimedia.org/wiki/File:Imperial_Cream_Stout.jpg
+  라이선스  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+
+beer_can_23_Boddingtons_Pub_Ale.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Boddingtons Pub Ale.JPG
+  저작자  Oxiq
+  원본  https://commons.wikimedia.org/wiki/File:Boddingtons_Pub_Ale.JPG
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_can_24_Lata_de_Imperial_Roja.jpg
+  보이는 대상 1개 · 960 × 1094 px
+  원본 제목  Lata de Imperial Roja.jpg
+  저작자  Just a Man
+  원본  https://commons.wikimedia.org/wiki/File:Lata_de_Imperial_Roja.jpg
+  라이선스  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+
+beer_can_25_Brewer_s_Special_Yakima_Valley_Double_Hopped_APA.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Brewer's Special Yakima Valley Double Hopped APA.jpg
+  저작자  JIP
+  원본  https://commons.wikimedia.org/wiki/File:Brewer%27s_Special_Yakima_Valley_Double_Hopped_APA.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_can_26_Berber_limited_Edition_2019.jpg
+  보이는 대상 1개 · 960 × 637 px
+  원본 제목  Berber limited Edition, 2019.jpg
+  저작자  Habib M'henni
+  원본  https://commons.wikimedia.org/wiki/File:Berber_limited_Edition,_2019.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_can_27_Bi_re_tunisienne_Stella_2017.jpg
+  보이는 대상 1개 · 960 × 1131 px
+  원본 제목  Bière tunisienne, Stella 2017.jpg
+  저작자  Habib M'henni
+  원본  https://commons.wikimedia.org/wiki/File:Bi%C3%A8re_tunisienne,_Stella_2017.jpg
+  라이선스  Public domain  원본 페이지 참조
+
+beer_can_28_Cerveza_Ortuzar_Lager_-_1.jpg
+  보이는 대상 1개 · 960 × 976 px
+  원본 제목  Cerveza Ortuzar Lager - (1).jpg
+  저작자  Just a Man
+  원본  https://commons.wikimedia.org/wiki/File:Cerveza_Ortuzar_Lager_-_(1).jpg
+  라이선스  CC BY 4.0  https://creativecommons.org/licenses/by/4.0
+
+
+맥주병 · class 0 · 28장
+
+beer_bottle_01_there_is_no_Santa_Christmas_beer_6570021403.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  "there is no Santa" Christmas beer (6570021403).jpg
+  저작자  Erik Cleves Kristensen
+  원본  https://commons.wikimedia.org/wiki/File:%22there_is_no_Santa%22_Christmas_beer_(6570021403).jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_02_Hiteexfeel.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Hiteexfeel.jpg
+  저작자  ayustety from Tokyo, Japan
+  원본  https://commons.wikimedia.org/wiki/File:Hiteexfeel.jpg
+  라이선스  CC BY-SA 2.0  https://creativecommons.org/licenses/by-sa/2.0
+
+beer_bottle_03_1664_beer_white_and_blue_bottles.jpg
+  보이는 대상 2개 · 960 × 1486 px
+  원본 제목  1664 beer white and blue bottles.jpg
+  저작자  Steve Brace from Herefordshire, UK
+  원본  https://commons.wikimedia.org/wiki/File:1664_beer_white_and_blue_bottles.jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_04_Biero_Libereco_en_Esperanto-glaso_2.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Biero "Libereco" en Esperanto-glaso, 2.jpeg
+  저작자  Renardo la vulpo
+  원본  https://commons.wikimedia.org/wiki/File:Biero_%22Libereco%22_en_Esperanto-glaso,_2.jpeg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_05_A_bottle_of_Ziegenbock_Texas_Bock_beer.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  A bottle of Ziegenbock Texas Bock beer.jpg
+  저작자  Gatorfan252525
+  원본  https://commons.wikimedia.org/wiki/File:A_bottle_of_Ziegenbock_Texas_Bock_beer.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_06_Berliner_Weisse_beer.jpg
+  보이는 대상 1개 · 960 × 574 px
+  원본 제목  Berliner Weisse beer.jpg
+  저작자  Steven Walling
+  원본  https://commons.wikimedia.org/wiki/File:Berliner_Weisse_beer.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_07_Korean_Food_at_Hosoonyi_in_Edmonds_WA.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Korean Food at Hosoonyi in Edmonds, WA.jpg
+  저작자  John Herschell
+  원본  https://commons.wikimedia.org/wiki/File:Korean_Food_at_Hosoonyi_in_Edmonds,_WA.jpg
+  라이선스  CC BY-SA 2.0  https://creativecommons.org/licenses/by-sa/2.0
+
+beer_bottle_08_A_bottle_of_Banks_Caribbean_lager.jpg
+  보이는 대상 1개 · 960 × 1428 px
+  원본 제목  A bottle of Banks Caribbean lager.jpg
+  저작자  Upjav
+  원본  https://commons.wikimedia.org/wiki/File:A_bottle_of_Banks_Caribbean_lager.jpg
+  라이선스  CC0 1.0  http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+beer_bottle_09_2013_Casablanca_beer.jpg
+  보이는 대상 1개 · 960 × 929 px
+  원본 제목  2013.Casablanca.beer.jpg
+  저작자  Ekem
+  원본  https://commons.wikimedia.org/wiki/File:2013.Casablanca.beer.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_10_Barleywine_sthelene.jpg
+  보이는 대상 1개 · 960 × 1454 px
+  원본 제목  Barleywine sthelene.jpg
+  저작자  DirkVE
+  원본  https://commons.wikimedia.org/wiki/File:Barleywine_sthelene.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_11_3cuvees_LS.jpg
+  보이는 대상 3개 · 960 × 1280 px
+  원본 제목  3cuvees LS.jpg
+  저작자  Stoffelambik
+  원본  https://commons.wikimedia.org/wiki/File:3cuvees_LS.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_12_Achel_beer_and_glass.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Achel beer and glass.jpg
+  저작자  (c) 2005 Zubro
+  원본  https://commons.wikimedia.org/wiki/File:Achel_beer_and_glass.jpg
+  라이선스  CC BY-SA 3.0  http://creativecommons.org/licenses/by-sa/3.0/
+
+beer_bottle_13_AB2A4817_copie.jpg
+  보이는 대상 4개 · 960 × 640 px
+  원본 제목  AB2A4817 copie.jpg
+  저작자  Marine Bourhis
+  원본  https://commons.wikimedia.org/wiki/File:AB2A4817_copie.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_14_Bi_re_-_Verre_Pietra_et_bouteille_Serena_-_Vieux_port_d.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Bière - Verre Pietra et bouteille Serena - Vieux port de Bastia.JPG
+  저작자  ChoumX
+  원본  https://commons.wikimedia.org/wiki/File:Bi%C3%A8re_-_Verre_Pietra_et_bouteille_Serena_-_Vieux_port_de_Bastia.JPG
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_15_100_Watt_75_Watt.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  100 Watt 75 Watt.jpg
+  저작자  Sam Cavenagh from Seattle, Australia
+  원본  https://commons.wikimedia.org/wiki/File:100_Watt_75_Watt.jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_16_Beerlao_lager.jpg
+  보이는 대상 1개 · 960 × 1067 px
+  원본 제목  Beerlao lager.jpg
+  저작자  Prince Roy
+  원본  https://commons.wikimedia.org/wiki/File:Beerlao_lager.jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_17_Amodio_garagardo_artisaua.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Amodio garagardo artisaua..jpg
+  저작자  Txapisotegi
+  원본  https://commons.wikimedia.org/wiki/File:Amodio_garagardo_artisaua..jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_18_5_Rabbit_Cerveceria_Yodo_con_leche_22393848376_d16b6dd6.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  5 Rabbit Cerveceria Yodo con leche 22393848376 d16b6dd664 o.jpg
+  저작자  stephen boisvert
+  원본  https://commons.wikimedia.org/wiki/File:5_Rabbit_Cerveceria_Yodo_con_leche_22393848376_d16b6dd664_o.jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_19_Ayinger_Br_uweisse_at_restaurant_Jano.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Ayinger Bräuweisse at restaurant Jano.jpg
+  저작자  JIP
+  원본  https://commons.wikimedia.org/wiki/File:Ayinger_Br%C3%A4uweisse_at_restaurant_Jano.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+beer_bottle_20_Biere-salamandre.jpg
+  보이는 대상 1개 · 960 × 950 px
+  원본 제목  Biere-salamandre.JPG
+  저작자  Archibald Tuttle
+  원본  https://commons.wikimedia.org/wiki/File:Biere-salamandre.JPG
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_21_Boven_blond.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Boven blond.jpg
+  저작자  Roel Scholten
+  원본  https://commons.wikimedia.org/wiki/File:Boven_blond.jpg
+  라이선스  CC BY 3.0  https://creativecommons.org/licenses/by/3.0
+
+beer_bottle_22_Bokbier.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Bokbier.jpg
+  저작자  Michiel1972 at Dutch Wikipedia
+  원본  https://commons.wikimedia.org/wiki/File:Bokbier.jpg
+  라이선스  CC BY-SA 3.0  http://creativecommons.org/licenses/by-sa/3.0/
+
+beer_bottle_23_Brauerei_Gusswerk_Nicobar_IPA.jpg
+  보이는 대상 1개 · 960 × 1346 px
+  원본 제목  Brauerei Gusswerk Nicobar IPA.jpg
+  저작자  Ghega
+  원본  https://commons.wikimedia.org/wiki/File:Brauerei_Gusswerk_Nicobar_IPA.jpg
+  라이선스  CC BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0
+
+beer_bottle_24_Bock_Solibra_33020069910.jpg
+  보이는 대상 1개 · 960 × 1280 px
+  원본 제목  Bock Solibra (33020069910).jpg
+  저작자  Erik Cleves Kristensen
+  원본  https://commons.wikimedia.org/wiki/File:Bock_Solibra_(33020069910).jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_25_Abbey_ale.jpg
+  보이는 대상 1개 · 960 × 720 px
+  원본 제목  Abbey ale.jpg
+  저작자  User Demi on en.wikipedia
+  원본  https://commons.wikimedia.org/wiki/File:Abbey_ale.jpg
+  라이선스  CC BY-SA 3.0  http://creativecommons.org/licenses/by-sa/3.0/
+
+beer_bottle_26_BaradaBeer.jpg
+  보이는 대상 1개 · 960 × 1438 px
+  원본 제목  BaradaBeer.jpg
+  저작자  Morgan Stenmark
+  원본  https://commons.wikimedia.org/wiki/File:BaradaBeer.jpg
+  라이선스  CC BY-SA 2.0  https://creativecommons.org/licenses/by-sa/2.0
+
+beer_bottle_27_Beer_36947175721.jpg
+  보이는 대상 1개 · 960 × 768 px
+  원본 제목  Beer (36947175721).jpg
+  저작자  Peter Trimming from Croydon, England
+  원본  https://commons.wikimedia.org/wiki/File:Beer_(36947175721).jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+beer_bottle_28_Bi_re_Baby_Dole_servie_avec_verre.jpg
+  보이는 대상 1개 · 960 × 1413 px
+  원본 제목  Bière Baby Dole servie avec verre.jpg
+  저작자  Sebleouf
+  원본  https://commons.wikimedia.org/wiki/File:Bi%C3%A8re_Baby_Dole_servie_avec_verre.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+
+병따개 · 배경 이미지 · 15장
+
+negative_opener_01_-_Coca-Cola_-_Old_bottle_opener_-.jpg
+  보이는 대상 0개 · 960 × 640 px
+  원본 제목  - Coca-Cola - Old bottle opener -.jpg
+  저작자  User:Nino Barbieri
+  원본  https://commons.wikimedia.org/wiki/File:-_Coca-Cola_-_Old_bottle_opener_-.jpg
+  라이선스  CC BY-SA 2.5  https://creativecommons.org/licenses/by-sa/2.5
+
+negative_opener_02_Bar-blade.jpg
+  보이는 대상 0개 · 960 × 542 px
+  원본 제목  Bar-blade.jpg
+  저작자  No machine-readable author provided. Wikibofh~commonswiki assumed (based on copyright claims).
+  원본  https://commons.wikimedia.org/wiki/File:Bar-blade.jpg
+  라이선스  Public domain  원본 페이지 참조
+
+negative_opener_03_Bottle_opener_Beck_s_23xvmvmx.jpg
+  보이는 대상 0개 · 960 × 1356 px
+  원본 제목  Bottle opener Beck’s ~23xvmvmx.jpg
+  저작자  Grzegorz W. Tężycki
+  원본  https://commons.wikimedia.org/wiki/File:Bottle_opener_Beck%E2%80%99s_~23xvmvmx.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+negative_opener_04_Alessi_Bottle_Openers.jpg
+  보이는 대상 0개 · 960 × 640 px
+  원본 제목  Alessi Bottle Openers.jpg
+  저작자  Didriks
+  원본  https://commons.wikimedia.org/wiki/File:Alessi_Bottle_Openers.jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+negative_opener_05_Antibes_Sunday_Market_Find_-_Brass_Mermaid_Bottle_Opene.jpg
+  보이는 대상 0개 · 960 × 960 px
+  원본 제목  Antibes Sunday Market Find - Brass Mermaid Bottle Opener.jpg
+  저작자  H. Michael Karshis
+  원본  https://commons.wikimedia.org/wiki/File:Antibes_Sunday_Market_Find_-_Brass_Mermaid_Bottle_Opener.jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+negative_opener_06_Bottle_Opener_Metal_For_Beer_Edited_2020.jpg
+  보이는 대상 0개 · 960 × 640 px
+  원본 제목  Bottle Opener Metal For Beer Edited 2020.jpg
+  저작자  Tool Dude8mm
+  원본  https://commons.wikimedia.org/wiki/File:Bottle_Opener_Metal_For_Beer_Edited_2020.jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
+
+negative_opener_07_Botila_irekitzekoa_001.jpg
+  보이는 대상 0개 · 960 × 720 px
+  원본 제목  Botila irekitzekoa 001.JPG
+  저작자  Joxemai
+  원본  https://commons.wikimedia.org/wiki/File:Botila_irekitzekoa_001.JPG
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+negative_opener_08_110_-_IMG_20160506_164316.jpg
+  보이는 대상 0개 · 960 × 1772 px
+  원본 제목  110 - IMG 20160506 164316.jpg
+  저작자  Susan Slater
+  원본  https://commons.wikimedia.org/wiki/File:110_-_IMG_20160506_164316.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+negative_opener_09_2006_pocket_knife_bottle_opener.jpg
+  보이는 대상 0개 · 960 × 646 px
+  원본 제목  2006 pocket knife bottle opener.jpg
+  저작자  No machine-readable author provided. Rl assumed (based on copyright claims).
+  원본  https://commons.wikimedia.org/wiki/File:2006_pocket_knife_bottle_opener.jpg
+  라이선스  CC BY-SA 3.0  http://creativecommons.org/licenses/by-sa/3.0/
+
+negative_opener_10_Bottle_opener_pirate_23lldgzv.jpg
+  보이는 대상 0개 · 960 × 1165 px
+  원본 제목  Bottle opener pirate ~23lldgzv.jpg
+  저작자  Grzegorz W. Tężycki
+  원본  https://commons.wikimedia.org/wiki/File:Bottle_opener_pirate_~23lldgzv.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+negative_opener_11_Bottle_opener_type_Bierhobel.jpg
+  보이는 대상 0개 · 960 × 1196 px
+  원본 제목  Bottle opener type Bierhobel.jpg
+  저작자  Vitavia
+  원본  https://commons.wikimedia.org/wiki/File:Bottle_opener_type_Bierhobel.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+negative_opener_12_Aussie_Souvenirs_-_flip_flop_bottle_opener_Queensland_A.jpg
+  보이는 대상 0개 · 960 × 1266 px
+  원본 제목  Aussie Souvenirs - flip flop bottle opener, Queensland, Australia.jpg
+  저작자  Kgbo
+  원본  https://commons.wikimedia.org/wiki/File:Aussie_Souvenirs_-_flip_flop_bottle_opener,_Queensland,_Australia.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+negative_opener_13_Bottle_opener_2_2018-07-09.jpg
+  보이는 대상 0개 · 960 × 720 px
+  원본 제목  Bottle opener 2 2018-07-09.jpg
+  저작자  F ASTILY
+  원본  https://commons.wikimedia.org/wiki/File:Bottle_opener_2_2018-07-09.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+negative_opener_14_2024-01-13_Lion_Brewery_opener.jpg
+  보이는 대상 0개 · 960 × 575 px
+  원본 제목  2024-01-13 Lion Brewery opener.jpg
+  저작자  Vireo1308
+  원본  https://commons.wikimedia.org/wiki/File:2024-01-13_Lion_Brewery_opener.jpg
+  라이선스  CC BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0
+
+negative_opener_15_2010-365-336_Key_to_the_Beer_Way_5227765741.jpg
+  보이는 대상 0개 · 960 × 640 px
+  원본 제목  2010-365-336 Key to the Beer Way (5227765741).jpg
+  저작자  cogdogblog
+  원본  https://commons.wikimedia.org/wiki/File:2010-365-336_Key_to_the_Beer_Way_(5227765741).jpg
+  라이선스  CC BY 2.0  https://creativecommons.org/licenses/by/2.0
